@@ -1,0 +1,13 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: auto $gutter-medium $gutter-default;
+  font-size: 1.1rem;
+  text-align: center;
+
+  a {
+    font-size: 1.1rem;
+    color: $dazzling-blue;
+  }
+}

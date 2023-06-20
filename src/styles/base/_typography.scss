@@ -1,0 +1,55 @@
+// @import '../modules/fonts';
+
+$global-font-body: 'Manrope', sans-serif;
+$global-font-display : 'Frances 144pt', sans-serif;
+
+$default-font-weight: 400;
+$default-font-weight-display: 600;
+$line-height-default: 1.6rem;
+$letter-spacing-default: 0px;
+
+@mixin display-text-large {
+  font-family: $global-font-display;
+  font-weight: $default-font-weight-display;
+  // font-size: 4rem;
+  // line-height: 4rem;
+  // letter-spacing: 0px;
+  // text-align: left;
+}
+
+@mixin display-text-large-mobile {
+  @include display-text-large;
+  color: $bitter-liquorice;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: $letter-spacing-default;
+
+}
+
+@mixin display-text-medium {
+  font-weight: $default-font-weight-display;
+  font-size: $font-size-default;
+  font-weight: $default-font-weight-display;
+  line-height: 2.4rem;
+  letter-spacing: $letter-spacing-default;
+  text-align: center;
+
+}
+
+@mixin body-text-primary {
+  font-family: $global-font-body;
+  color: $bitter-liquorice;
+  font-size: $font-size-default;
+  font-weight: $default-font-weight;
+  line-height: 2.4rem;
+  letter-spacing: $letter-spacing-default;
+}
+
+@mixin body-text-primary-small {
+  font-family: $global-font-body;
+  color: $bitter-liquorice;
+  font-size: 1.2rem;
+  font-weight: $default-font-weight-display;
+  line-height: 1.8rem;
+  letter-spacing: $letter-spacing-default;
+}

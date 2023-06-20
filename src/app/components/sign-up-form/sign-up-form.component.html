@@ -1,0 +1,44 @@
+<img [hidden]="submitted"
+     [src]=currentIllustrationSrc
+     alt="illustration">
+<section class="section__sign-up">
+
+  <form [hidden]="submitted"
+        (ngSubmit)="onSubmit(signUpForm)"
+        class="form"
+        #signUpForm="ngForm"
+        novalidate>
+    <h1 class="form__title">Stay updated!</h1>
+    <p class="form__text"> Join 60,000+ product managers receiving monthly updates on:</p>
+
+    <ul class="form__list">
+      <li class="form__list--item">Product discovery and building what matters</li>
+      <li class="form__list--item">Measuring to ensure updates are a success</li>
+      <li class="form__list--item">And much more!</li>
+    </ul>
+    <div class="form__message">
+      <label for="email">Email address</label>
+      <span [hidden]="emailValid"
+            class="form-alert alert-danger">Valid email required</span>
+    </div>
+    <input type="email"
+           name="email"
+           ngModel
+           #email="ngModel"
+           placeholder="email@company.com"
+           email
+           required
+           [ngClass]="{'alert' : !emailValid}">
+
+    <button type="submit"
+            class="btn"
+            [disabled]="email.pristine"
+            [hidden]="submitted">Subscribe to monthly newsletter</button>
+  </form>
+
+  <app-success-message [hidden]="!submitted"
+                       [emailInput]="email.value"></app-success-message>
+  <button class="btn"
+          (click)="dismissMessage()"
+          [hidden]="!submitted">Dismiss message</button>
+</section>

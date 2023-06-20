@@ -1,0 +1,48 @@
+body {
+  font-size: $font-size-default;
+  font-family: $global-font-body;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+
+  @include responsive-for(desktop) {
+    background: $old-mill;
+  }
+
+  @include flex(column, space-between, center);
+}
+
+.container {
+  max-height: 100vh;
+  width: 100vw;
+  @include flex(column, space-between, center);
+  flex: 1;
+  background: $granulated-sugar;
+
+  @include responsive-for(desktop) {
+    max-height: 64.1rem;
+    max-width: 92.8rem;
+    @include flex(column, center, center);
+    border-radius: $border-radius-default-desktop;
+    margin: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  @include body-text-primary;
+  cursor: pointer;
+}

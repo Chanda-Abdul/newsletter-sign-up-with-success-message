@@ -1,0 +1,16 @@
+.btn {
+  height: 100%;
+  width: 100%;
+  height: 5.6rem;
+  width: 100%;
+  border-radius: $border-radius-default-mobile;
+  background-color: $bitter-liquorice;
+  color: $granulated-sugar;
+  margin-top: $gutter-default;
+  @include display-text-medium;
+  border: none;
+  cursor: pointer;
+  &:disabled{
+    background-color: rgba($dark-knight, .15);
+  }
+}

@@ -1,0 +1,11 @@
+section{
+  height: 100%;
+  width: 100%;
+  padding: $gutter-medium $gutter-default;
+  @include flex(column, space-between, center);
+  flex: 1;
+
+  @include responsive-for(desktop) {
+    @include flex(column, space-between, center);
+  }
+}

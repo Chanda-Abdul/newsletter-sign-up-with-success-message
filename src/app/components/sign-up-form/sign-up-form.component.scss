@@ -1,0 +1,20 @@
+@import 'src/styles/main.scss';
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  @include responsive-for(desktop) {
+    @include flex(row-reverse, center, center);
+    padding: $gutter-default;
+
+    img {
+      max-height: 59.3rem;
+      max-width: 40rem;
+      border-radius: $border-radius-default-desktop;
+
+    }
+  }
+}
