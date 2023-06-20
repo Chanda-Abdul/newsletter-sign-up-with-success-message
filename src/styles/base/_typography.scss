@@ -1,10 +1,10 @@
 // @import '../modules/fonts';
 
-$global-font-body: 'Manrope', sans-serif;
-$global-font-display : 'Frances 144pt', sans-serif;
+$global-font-body: 'Roboto', sans-serif;
+$global-font-display : 'Roboto Bold', sans-serif;
 
 $default-font-weight: 400;
-$default-font-weight-display: 600;
+$default-font-weight-display: 700;
 $line-height-default: 1.6rem;
 $letter-spacing-default: 0px;
 
@@ -19,7 +19,7 @@ $letter-spacing-default: 0px;
 
 @mixin display-text-large-mobile {
   @include display-text-large;
-  color: $bitter-liquorice;
+  color: $dark-slate-gray;
   font-size: 4rem;
   line-height: 4rem;
   letter-spacing: $letter-spacing-default;
@@ -38,7 +38,7 @@ $letter-spacing-default: 0px;
 
 @mixin body-text-primary {
   font-family: $global-font-body;
-  color: $bitter-liquorice;
+  color: $dark-slate-gray;
   font-size: $font-size-default;
   font-weight: $default-font-weight;
   line-height: 2.4rem;
@@ -47,7 +47,7 @@ $letter-spacing-default: 0px;
 
 @mixin body-text-primary-small {
   font-family: $global-font-body;
-  color: $bitter-liquorice;
+  color: $dark-slate-gray;
   font-size: 1.2rem;
   font-weight: $default-font-weight-display;
   line-height: 1.8rem;

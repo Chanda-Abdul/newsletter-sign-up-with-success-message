@@ -7,11 +7,14 @@ body {
   height: 100vh;
   width: 100vw;
 
-  @include responsive-for(desktop) {
-    background: $old-mill;
-  }
+
 
   @include flex(column, space-between, center);
+   @include responsive-for(desktop) {
+    background: $charcoal-gray;
+
+  @include flex(column, center, center);
+  }
 }
 
 .container {
