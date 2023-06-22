@@ -6,28 +6,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   width: 100vw;
-
-
-
+  position: relative;
   @include flex(column, space-between, center);
-   @include responsive-for(desktop) {
-    background: $charcoal-gray;
 
-  @include flex(column, center, center);
+  @include responsive-for(desktop) {
+    background: $charcoal-gray;
+    @include flex(column, center, center);
   }
 }
 
 .container {
-  max-height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   @include flex(column, space-between, center);
   flex: 1;
   background: $granulated-sugar;
 
   @include responsive-for(desktop) {
+   min-height: fit-content;
+    width: fit-content;
     max-height: 64.1rem;
-    max-width: 92.8rem;
     @include flex(column, center, center);
+
     border-radius: $border-radius-default-desktop;
     margin: auto;
   }

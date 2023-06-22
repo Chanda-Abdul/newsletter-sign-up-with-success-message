@@ -5,6 +5,8 @@ form {
     @include body-text-primary-small;
     color: $vermellion;
   }
+
+  max-width: 37.6rem;
 }
 
 .form {
@@ -61,6 +63,11 @@ input {
   border-radius: $border-radius-default-mobile;
   padding: 1.6rem 2.4rem;
   border: 1px solid rgba($dark-knight, .25);
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
 }
 
 .alert {

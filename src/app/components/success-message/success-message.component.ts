@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './success-message.component.html',
   styleUrls: ['./success-message.component.scss']
 })
+
 export class SuccessMessageComponent {
   @Input() emailInput: string = '';
 }

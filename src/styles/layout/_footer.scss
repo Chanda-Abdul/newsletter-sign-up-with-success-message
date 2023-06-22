@@ -1,5 +1,5 @@
 footer {
-  position: absolute;
+
   bottom: 0;
   left: 0;
   width: 100%;
@@ -10,5 +10,18 @@ footer {
   a {
     font-size: 1.1rem;
     color: $dazzling-blue;
+  }
+
+  @include responsive-for(desktop) {
+    position: absolute;
+    font-size: 1.2rem;
+    color: $granulated-sugar;
+
+    a,
+    a:visited,
+    a:active {
+      font-size: 1.2rem;
+      color: $granulated-sugar;
+    }
   }
 }

@@ -25,13 +25,14 @@ export class SignUpFormComponent implements OnInit {
   }
 
   private updateImageSrc() {
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 600;
     if (isMobile) {
       this.currentIllustrationSrc = this.mobileIllustrationSrc;
     } else {
       this.currentIllustrationSrc = this.desktopIllustrationSrc;
     }
   }
+
   onSubmit(form: NgForm) {
     if (this.validateEmail(form.value.email)) {
       this.signUps.push(form.value.email);
@@ -39,7 +40,7 @@ export class SignUpFormComponent implements OnInit {
 
       setTimeout(() => {
         this.dismissMessage();
-      }, 5000);
+      }, 15000);
     } else {
       this.emailValid = false;
     }

@@ -1,7 +1,6 @@
-// @import '../modules/fonts';
-
 $global-font-body: 'Roboto', sans-serif;
-$global-font-display : 'Roboto Bold', sans-serif;
+$global-font-display : 'Roboto Bold',
+sans-serif;
 
 $default-font-weight: 400;
 $default-font-weight-display: 700;
@@ -11,10 +10,6 @@ $letter-spacing-default: 0px;
 @mixin display-text-large {
   font-family: $global-font-display;
   font-weight: $default-font-weight-display;
-  // font-size: 4rem;
-  // line-height: 4rem;
-  // letter-spacing: 0px;
-  // text-align: left;
 }
 
 @mixin display-text-large-mobile {
@@ -23,7 +18,6 @@ $letter-spacing-default: 0px;
   font-size: 4rem;
   line-height: 4rem;
   letter-spacing: $letter-spacing-default;
-
 }
 
 @mixin display-text-medium {
@@ -33,7 +27,6 @@ $letter-spacing-default: 0px;
   line-height: 2.4rem;
   letter-spacing: $letter-spacing-default;
   text-align: center;
-
 }
 
 @mixin body-text-primary {

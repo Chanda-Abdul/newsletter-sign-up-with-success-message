@@ -1,18 +1,28 @@
-@import "main";
+@import 'src/styles/abstracts/mixins';
+@import 'src/styles/abstracts/variables';
+@import 'src/styles/base/typography';
+@import 'src/styles/base/media-queries';
 
 .message {
   height: 100%;
   max-width: 100vw;
   @include flex(column, space-between, flex-start);
   flex: 1;
+
   &__content {
-    margin-top: 14.9rem;
+    margin-top: 10.9rem;
+
+    @include responsive-for(desktop) {
+      margin-top: 0;
+    }
 
     img {
       height: 6.4rem;
       width: 6.4rem;
       margin-bottom: $gutter-medium;
     }
+
+    max-width: 37.6rem;
   }
 
   &__title {
